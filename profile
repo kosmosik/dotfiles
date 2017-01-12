@@ -1,3 +1,6 @@
+# command prompt
+export PS1="\h\\$ \[$(tput sgr0)\]"
+
 # variables
 export EDITOR="mcedit"
 export VISUAL="mcedit"
