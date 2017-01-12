@@ -1,3 +1,5 @@
 [user]
 	name = Konrad Kosmowski
 	email = kos@kosmosik.net
+[push]
+	default = simple
