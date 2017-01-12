@@ -1,0 +1,5 @@
+.config/mc/ini
+.gitconfig
+.profile
+.ssh/config
+.tmux.conf

@@ -1,0 +1,15 @@
+#!/bin/bash
+# links list file
+links=$HOME/dotfiles/install.list
+# check list file
+[ ! -f $links ] && echo "Links list file not found. Exiting." && exit 1
+# read files
+while read symlink; do
+  # check if file/symlink exist 
+  [ -f $HOME/$symlink ] && echo -e "File exists:\t$HOME/$symlink" && continue
+  # check if destination exists in dotfiles
+  [ ! -f $HOME/dotfiles/${symlink:1} ] && echo -e "Source missing:\t$HOME/dotfiles/${symlink:1}" && continue
+  # symlink
+  echo -e "Linking:\t$HOME/dotfiles/${symlink:1} -> $HOME/$symlink"
+  ln -s $HOME/dotfiles/${symlink:1} $HOME/$symlink
+done < $links
