@@ -29,7 +29,6 @@ set -g set-titles
 set-option -g set-titles-string "#h> #T"
 
 # status bar
-set -g status-position bottom
 set -g status-interval 1
 set -g status-left '#h> '
 set -g status-left-length 20
