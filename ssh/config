@@ -3,4 +3,5 @@ Host *
     CheckHostIP no
     Compression yes
     StrictHostKeyChecking no
+    UserKnownHostsFile /dev/null
 # host settings
