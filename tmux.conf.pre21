@@ -1,5 +1,9 @@
-# mouse post 2.1 style
-set -g mouse on
+# mouse pre 2.1 version
+if-shell -b '[ "$(echo "$TMUX_VERSION < 2.1" | bc)" = 1 ]' "
+set -g mode-mouse on
+set -g mouse-resize-pane on
+set -g mouse-select-pane on
+set -g mouse-select-window on
 
 # prefix key bindings
 unbind C-b
