@@ -1,0 +1,6 @@
+# defaults for all hosts
+Host *
+    CheckHostIP no
+    Compression yes
+    StrictHostKeyChecking no
+# host settings
