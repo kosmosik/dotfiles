@@ -1,28 +1,36 @@
-# mouse support
+# mouse support variable between versions
+# this is pre 2.1 version
 set -g mode-mouse on
 set -g mouse-resize-pane on
 set -g mouse-select-pane on
 set -g mouse-select-window on
 
-# prefix key
+# prefix key bindings
 unbind C-b
 set -g prefix C-space
 bind C-space send-prefix
 
-# pane splitting
+# config reload bindings
+unbind r
+bind r source-file ~/.tmux.conf
+
+# copy/paste bindings
+unbind b
+bind-key b copy-mode
+unbind v
+bind-key v paste-buffer
+
+# pane splitting bindings
 unbind %
-unbind '"'
 bind '\' split-window -h
+unbind '"'
 bind - split-window -v
 
-# pane switching
+# pane switching bindings
 bind -n M-Left select-pane -L
 bind -n M-Right select-pane -R
 bind -n M-Up select-pane -U
 bind -n M-Down select-pane -D
-
-# config reload
-bind r source-file ~/.tmux.conf
 
 # terminal title
 set -g set-titles
@@ -32,11 +40,11 @@ set-option -g set-titles-string "#h> #T"
 set -g status-interval 1
 set -g status-left '#h> '
 set -g status-left-length 20
-set -g status-right-length 80
 set -g status-right '#T'
+set -g status-right-length 80
 
 # terminal type
 set -g default-terminal "xterm"
 
-# history
+# history limit
 set -g history-limit 4096
