@@ -1,6 +1,9 @@
 # command prompt
 export PS1="\h\\$ \[$(tput sgr0)\]"
 
+# setup path
+export PATH="$PATH:$HOME/scripts"
+
 # variables
 export EDITOR="mcedit"
 export VISUAL="mcedit"
