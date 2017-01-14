@@ -4,4 +4,5 @@ Host *
     Compression yes
     StrictHostKeyChecking no
     UserKnownHostsFile /dev/null
+    PubkeyAcceptedKeyTypes +ssh-dss
 # host settings
