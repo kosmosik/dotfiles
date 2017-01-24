@@ -1,5 +1,6 @@
 .config/mc/ini
 .gitconfig
+.hushlogin
 .profile
 .ssh/config
 .tmux.conf
