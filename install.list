@@ -4,3 +4,4 @@
 .profile
 .ssh/config
 .tmux.conf
+.vimrc
