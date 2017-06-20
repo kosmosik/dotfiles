@@ -5,8 +5,8 @@ export PS1="\h\\$ \[$(tput sgr0)\]"
 export PATH="$PATH:$HOME/scripts"
 
 # variables
-export EDITOR="mcedit"
-export VISUAL="mcedit"
+export EDITOR="vi"
+export VISUAL="vim"
 
 # aliases
 alias ..='cd ..'
@@ -14,3 +14,4 @@ alias c='clear'
 alias h='history'
 alias ll='ls --color=auto -la'
 alias ls='ls --color=auto'
+alias mcedit='vim'
