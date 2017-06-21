@@ -1,8 +1,6 @@
-# defaults for all hosts
+# Defaults for all hosts
 Host *
     CheckHostIP no
-    Compression yes
     StrictHostKeyChecking no
+    LogLevel ERROR
     UserKnownHostsFile /dev/null
-#   PubkeyAcceptedKeyTypes +ssh-dss
-# host settings
