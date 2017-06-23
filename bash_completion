@@ -1,3 +1,4 @@
 # cause network tools to use _ssh functions for completion
-source /usr/share/bash-completion/completions/ssh
+if [ -f /usr/share/bash-completion/completions/ssh ]; then source /usr/share/bash-completion/completions/ssh; fi
+if [ -f /etc/bash_completion.d/ssh ]; then source /etc/bash_completion.d/ssh; fi
 shopt -u hostcomplete && complete -F _ssh dig fping host nmap nslookup ping telnet tracepath
