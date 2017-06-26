@@ -42,12 +42,16 @@ set tabstop=4
 
 " Search, scrolling, mouse, menu
 set incsearch
-set mouse=a
 set nohlsearch
 set scrolloff=3
 set smartcase
 set wildmenu
 set wildmode=list:longest
+
+" Mouse support
+if has('mouse')
+    set mouse=a
+endif
 
 " Load local config
 if filereadable($HOME . "/.vimrc.local")
