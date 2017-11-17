@@ -1,10 +1,14 @@
-# command prompt
+### Prompt
 export PS1="\h\\$ "
 
-# setup path
+### Paths
 export PATH="$PATH:$HOME/scripts"
 
-# variables
+### Editor
 export EDITOR="vim"
 export VISUAL="vim"
 
+### History
+export HISTSIZE=4096
+export HISTFILESIZE=4096
+export HISTTIMEFORMAT="%y%m%d "
