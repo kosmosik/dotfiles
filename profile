@@ -11,4 +11,4 @@ export VISUAL="vim"
 ### History
 export HISTSIZE=4096
 export HISTFILESIZE=4096
-export HISTTIMEFORMAT="%y%m%d "
+export HISTTIMEFORMAT="%Y-%m-%d> "
