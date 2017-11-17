@@ -1,5 +1,5 @@
 # command prompt
-export PS1="\h\\$ \[$(tput sgr0)\]"
+export PS1="\h\\$ "
 
 # setup path
 export PATH="$PATH:$HOME/scripts"
