@@ -5,7 +5,7 @@ export PS1="\h\\$ \[$(tput sgr0)\]"
 export PATH="$PATH:$HOME/scripts"
 
 # variables
-export EDITOR="vi"
+export EDITOR="vim"
 export VISUAL="vim"
 
 # aliases
