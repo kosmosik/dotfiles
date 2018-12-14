@@ -13,7 +13,7 @@ set undolevels=128
 highlight CursorLine cterm=NONE ctermbg=DarkGrey
 highlight LineNr cterm=NONE ctermbg=DarkGrey ctermfg=Grey
 set cursorline
-set number
+set number relativenumber
 set numberwidth=6
 set laststatus=0
 set linebreak
