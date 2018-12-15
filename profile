@@ -1,5 +1,5 @@
 # Prompt
-export PS1="\[\033[38;5;14m\]\h\[$(tput sgr0)\]\[\033[38;5;15m\]:\w\[$(tput sgr0)\]\[\033[38;5;13m\]\\$\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+export PS1="\[\033[38;5;10m\]\h\[$(tput sgr0)\]\[\033[38;5;2m\]>\[$(tput sgr0)\]\[\033[38;5;8m\]\w\$\[$(tput sgr0)\] "
 
 # Paths
 export PATH="$PATH:$HOME/scripts"
