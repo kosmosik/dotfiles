@@ -4,6 +4,9 @@ export PS1="\[\033[38;5;10m\]\h\[$(tput sgr0)\]\[\033[38;5;2m\]>\[$(tput sgr0)\]
 # Paths
 export PATH="$PATH:$HOME/scripts"
 
+# Aliases
+alias rtmux="tmux attach || tmux new"
+
 # Editor
 export EDITOR="vim"
 export VISUAL="vim"
