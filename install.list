@@ -7,4 +7,5 @@
 .ssh/config
 .tmux.conf
 .vimrc
+.Xmodmap
 .Xresources
