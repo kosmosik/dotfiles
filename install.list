@@ -1,6 +1,7 @@
 .bash_completion
 .config/mc/ini
 .config/mpv/mpv.conf
+.conkyrc
 .gitconfig
 .hushlogin
 .profile

@@ -4,3 +4,7 @@ Host *
     StrictHostKeyChecking no
     LogLevel ERROR
     UserKnownHostsFile /dev/null
+# Home alias
+Host home
+    HostName home.kosmosik.net
+    User kos
