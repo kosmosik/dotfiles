@@ -1,23 +1,23 @@
 conky.config = {
-    alignment = 'top_right',
-    background = true,
-    double_buffer = true,
-    font = 'Roboto Condensed:size=12',
-    gap_x = 20,
-    gap_y = 20,
-    own_window = true,
-    own_window_class = 'Conky',
-    own_window_transparent = true,
-    own_window_type = 'desktop',
-    own_window_argb_visual = true,
-    short_units = true,
-    update_interval = 1,
-    use_xft = true
+alignment = 'bottom_right',
+background = true,
+double_buffer = true,
+font = 'Roboto Condensed:size=11',
+gap_x = 16,
+gap_y = 0,
+own_window = true,
+own_window_argb_visual = true,
+own_window_class = 'Conky',
+own_window_transparent = true,
+own_window_type = 'desktop',
+short_units = true,
+update_interval = 1,
+update_interval_on_battery = 10,
+use_xft = true
 }
 conky.text = [[
-${alignr}Battery status is ${battery}, AC adapter is ${acpiacadapter}
-${if_up wls3}${alignr}Connected to ${wireless_essid} (${addr wls3})${endif}
-${voffset 555}
-${alignr}${font Roboto:size=44}${time %H:%M}${font}
-${alignr}${font Roboto Condensed:size=18}${time %a, %d %b %Y}${font}
+${alignr}${font Roboto:style=Thin:size=64}${time %H:%M}${font}
+${voffset 12}\
+${alignr}Battery charge is ${battery_percent}%, AC is ${acpiacadapter}
+${if_existing /sys/class/net/wls3/operstate up}${alignr}Connected to ${wireless_essid}, ${addr wls3}${endif}
 ]]
