@@ -8,16 +8,19 @@ gap_y = 0,
 own_window = true,
 own_window_argb_visual = true,
 own_window_class = 'Conky',
+own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
 own_window_transparent = true,
-own_window_type = 'desktop',
+own_window_type = 'normal',
 short_units = true,
-update_interval = 1,
-update_interval_on_battery = 10,
+update_interval = 5,
+update_interval_on_battery = 15,
 use_xft = true
 }
 conky.text = [[
 ${alignr}${font Roboto:style=Thin:size=64}${time %H:%M}${font}
 ${voffset 12}\
+${alignr}Master volume is ${exec amixer get Master -M | awk 'NR==5 {gsub(/\[|\]/,""); if ($6 ~ /on/)
+print $4; else print "muted at " $4}'}
 ${alignr}Battery charge is ${battery_percent}%, AC is ${acpiacadapter}
 ${if_existing /sys/class/net/wls3/operstate up}${alignr}Connected to ${wireless_essid}, ${addr wls3}${endif}
 ]]
