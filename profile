@@ -2,7 +2,7 @@
 export PS1="\[\033[38;5;10m\]\h\[$(tput sgr0)\]\[\033[38;5;2m\]>\[$(tput sgr0)\]\[\033[38;5;8m\]\w\$\[$(tput sgr0)\] "
 
 # Paths
-export PATH="$PATH:$HOME/scripts"
+export PATH="$HOME/.local/bin:$HOME/scripts:$PATH"
 
 # Editor
 export EDITOR="vim"
