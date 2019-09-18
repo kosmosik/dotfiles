@@ -1,9 +1,9 @@
 conky.config = {
-alignment = 'bottom_right',
+alignment = 'top_right',
 background = true,
 double_buffer = true,
-font = 'Roboto Condensed:size=11',
-gap_x = 16,
+font = 'Roboto:size=11',
+gap_x = 12,
 gap_y = 0,
 own_window = true,
 own_window_argb_visual = true,
@@ -17,10 +17,10 @@ update_interval_on_battery = 15,
 use_xft = true
 }
 conky.text = [[
-${alignr}${font Roboto:style=Thin:size=64}${time %H:%M}${font}
-${voffset 12}\
-${alignr}Master volume is ${exec amixer get Master -M | awk 'NR==5 {gsub(/\[|\]/,""); if ($6 ~ /on/)
-print $4; else print "muted at " $4}'}
-${alignr}Battery charge is ${battery_percent}%, AC is ${acpiacadapter}
-${if_existing /sys/class/net/wls3/operstate up}${alignr}Connected to ${wireless_essid}, ${addr wls3}${endif}
+${alignr}${font IBM Plex Sans:style=Thin:size=72}${time %H:%M}${font}
+${voffset 18}\
+${alignr}Volume is ${exec amixer -c 1 -M -D pulse get Master | awk 'NR==6 {gsub(/\[|\]/,""); if ($6 ~ /on/)
+print "at " $5; else print "muted at " $5}'}
+${alignr}Battery is ${battery_percent}%, AC is ${acpiacadapter}
+${if_existing /sys/class/net/wlp1s0/operstate up}${alignr}Connected to ${wireless_essid}, ${addr wlp1s0}${endif}
 ]]
