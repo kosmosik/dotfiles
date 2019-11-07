@@ -1,10 +1,10 @@
 conky.config = {
-alignment = 'top_right',
+alignment = 'bottom_right',
 background = true,
 double_buffer = true,
-font = 'Roboto:size=11',
-gap_x = 12,
-gap_y = 0,
+font = 'Roboto:style=Regular:size=10',
+gap_x = 8,
+gap_y = 4,
 own_window = true,
 own_window_argb_visual = true,
 own_window_class = 'Conky',
@@ -17,8 +17,8 @@ update_interval_on_battery = 15,
 use_xft = true
 }
 conky.text = [[
-${alignr}${font IBM Plex Sans:style=Thin:size=72}${time %H:%M}${font}
-${voffset 18}\
+${alignr}${font IBM Plex Sans:style=Regular:size=24}${time %H:%M}${font}
+${voffset 8}\
 ${alignr}Volume is ${exec amixer -c 1 -M -D pulse get Master | awk 'NR==6 {gsub(/\[|\]/,""); if ($6 ~ /on/)
 print "at " $5; else print "muted at " $5}'}
 ${alignr}Battery is ${battery_percent}%, AC is ${acpiacadapter}
