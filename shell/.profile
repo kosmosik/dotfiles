@@ -1,5 +1,3 @@
-alias alt-tab-off="gsettings set org.gnome.desktop.wm.keybindings switch-windows \"['<Super>Tab']\""
-alias alt-tab-on="gsettings set org.gnome.desktop.wm.keybindings switch-windows \"['<Alt>Tab','<Super>Tab']\""
 export EDITOR="vim"
 export HISTFILESIZE=4096
 export HISTSIZE=4096
