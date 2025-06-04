@@ -1,0 +1,9 @@
+cursor-style = block
+cursor-style-blink = true
+font-family = JetBrains Mono
+font-size = 12
+scrollback-limit = 16384
+shell-integration-features = no-cursor
+theme = nord-wave
+window-height = 40
+window-width = 120
